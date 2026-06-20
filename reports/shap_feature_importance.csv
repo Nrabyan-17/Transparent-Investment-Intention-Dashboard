@@ -1,0 +1,34 @@
+,mean_abs_shap
+investmentCapacity,0.04357487628652634
+digital_ratio,0.031533372164938386
+buy_ratio,0.024159874515610375
+preferred_channel_Internet Banking,0.022792666037041928
+total_invested,0.01668562234895132
+customerType_Mass,0.014677634855243154
+avg_days_between_transactions,0.01069209857999459
+total_sold,0.010084563867602495
+dominant_sector_Communication Services,0.009365804913688202
+buy_count,0.008993398464390937
+log_avg_value,0.008788938132496676
+sell_to_buy_value_ratio,0.008513497394333108
+avg_transaction_value,0.008506605486003158
+investment_period_days,0.007217968579512115
+total_transactions,0.0055519970043988185
+customerType_Professional,0.0055003360057154765
+unique_sectors_traded,0.004945989230023987
+customerType_Premium,0.0047890861108751195
+unique_stocks_traded,0.0044350201690704135
+sell_count,0.003295797457403352
+preferred_channel_Phone Banking,0.0031451935984402844
+dominant_sector_Unknown,0.0030686762504729425
+dominant_sector_Financial Services,0.002287948977621562
+dominant_sector_Industrials,0.0010500124695730418
+dominant_sector_Utilities,0.0005834489099552314
+dominant_sector_Consumer Cyclical,0.0005433089700273921
+dominant_sector_Energy,0.00046979956998160924
+dominant_sector_Consumer Defensive,0.00018966223882849344
+dominant_sector_Technology,7.577952248856166e-05
+dominant_sector_Real Estate,3.2928273040049636e-05
+customerType_Legal Entity,8.075612889967366e-06
+dominant_sector_Healthcare,1.9883881224937704e-06
+has_questionnaire,0.0

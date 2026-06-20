@@ -1,0 +1,8 @@
+File,Issue,Count,Pct,Treatment
+customer_information.csv,Multiple snapshots per customerID,3378,10.4%,Deduplikasi: ambil snapshot terbaru (sort by timestamp)
+customer_information.csv,Predicted_* risk labels (bukan asli),7141,24.5%,"Pisahkan dari training set, gunakan hanya 4 label asli"
+customer_information.csv,Risk level Not_Available,320,1.1%,Drop dari training set
+asset_information.csv,Missing sector untuk saham,59,20.7%,Imputasi 'Unknown' atau drop
+asset_information.csv,Missing industry untuk saham,61,21.4%,Imputasi 'Unknown' atau drop kolom
+transactions.csv,"Outliers extreme (>Q99 = 42,540)",3456,1.0%,Log transformation atau winsorization
+customer_information.csv,Placeholder date 2000-01-01 di lastQuestionnaireDate,7142,24.6%,"Replace dengan NaN, kemudian flag sebagai feature"

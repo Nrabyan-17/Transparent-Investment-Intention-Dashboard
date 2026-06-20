@@ -1,0 +1,107 @@
+{
+  "best_model": "Random Forest",
+  "label_names": [
+    "Aggressive",
+    "Balanced",
+    "Conservative",
+    "Income"
+  ],
+  "label_encoding": {
+    "Aggressive": 0,
+    "Balanced": 1,
+    "Conservative": 2,
+    "Income": 3
+  },
+  "feature_names": [
+    "investmentCapacity",
+    "has_questionnaire",
+    "total_transactions",
+    "buy_count",
+    "sell_count",
+    "buy_ratio",
+    "avg_transaction_value",
+    "log_avg_value",
+    "total_invested",
+    "total_sold",
+    "sell_to_buy_value_ratio",
+    "unique_stocks_traded",
+    "unique_sectors_traded",
+    "digital_ratio",
+    "investment_period_days",
+    "avg_days_between_transactions",
+    "customerType_Legal Entity",
+    "customerType_Mass",
+    "customerType_Premium",
+    "customerType_Professional",
+    "preferred_channel_Internet Banking",
+    "preferred_channel_Phone Banking",
+    "dominant_sector_Communication Services",
+    "dominant_sector_Consumer Cyclical",
+    "dominant_sector_Consumer Defensive",
+    "dominant_sector_Energy",
+    "dominant_sector_Financial Services",
+    "dominant_sector_Healthcare",
+    "dominant_sector_Industrials",
+    "dominant_sector_Real Estate",
+    "dominant_sector_Technology",
+    "dominant_sector_Unknown",
+    "dominant_sector_Utilities"
+  ],
+  "n_features": 33,
+  "n_train": 10888,
+  "n_test": 2723,
+  "metrics_all": [
+    {
+      "Model": "Decision Tree",
+      "Train Accuracy": 0.5064290962527553,
+      "Test Accuracy": 0.3848696290855674,
+      "Precision (macro)": 0.3833576979774968,
+      "Recall (macro)": 0.4520718675978132,
+      "F1-Score (macro)": 0.38641000004237824
+    },
+    {
+      "Model": "Random Forest",
+      "Train Accuracy": 0.7772777369581191,
+      "Test Accuracy": 0.44326110907087773,
+      "Precision (macro)": 0.4237336013229409,
+      "Recall (macro)": 0.45791782157019456,
+      "F1-Score (macro)": 0.43149470465651296
+    },
+    {
+      "Model": "XGBoost",
+      "Train Accuracy": 0.4664768552534901,
+      "Test Accuracy": 0.40763863385971355,
+      "Precision (macro)": 0.41330743943369486,
+      "Recall (macro)": 0.4939502122415084,
+      "F1-Score (macro)": 0.4098132298992095
+    }
+  ],
+  "best_params": {
+    "decision_tree": {
+      "class_weight": "balanced",
+      "max_depth": "10",
+      "min_samples_leaf": "1",
+      "min_samples_split": "2"
+    },
+    "random_forest": {
+      "class_weight": "balanced",
+      "max_depth": "None",
+      "min_samples_leaf": "5",
+      "n_estimators": "300"
+    },
+    "xgboost": {
+      "learning_rate": "0.05",
+      "max_depth": "4",
+      "n_estimators": "200",
+      "reg_lambda": "2.0",
+      "subsample": "1.0"
+    }
+  },
+  "cv_strategy": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+  "scoring_metric": "f1_macro",
+  "class_imbalance_handling": {
+    "decision_tree": "class_weight='balanced'",
+    "random_forest": "class_weight='balanced'",
+    "xgboost": "sample_weight via compute_sample_weight('balanced', y_train)"
+  }
+}
